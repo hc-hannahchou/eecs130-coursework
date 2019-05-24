@@ -23,12 +23,22 @@ const loadFlowers = () => {
 
 const loadCars = () => {
     // your job:
-    console.log('fetch data from', serverURL + 'cars.json', 'and display it...');
+    fetch(serverURL + 'cars.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then(loadCards);
+    //console.log('fetch data from', serverURL + 'cars.json', 'and display it...');
 };
 
 const loadBikes = () => {
     // your job:
-    console.log('fetch data from', serverURL + 'bikes.json', 'and display it...');
+    fetch(serverURL + 'bikes.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then(loadCards);
+    //console.log('fetch data from', serverURL + 'bikes.json', 'and display it...');
 };
 
 document.querySelector('#flowers-button').onclick = loadFlowers;
