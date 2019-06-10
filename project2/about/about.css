@@ -1,30 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Monoton|Vesper+Libre&display=swap');
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
 
+body * {
+    box-sizing: border-box;
 }
 
 /* Header/logo Title */
 .header {
+  border: 5px solid  #BD4C4C;
   padding: 80px;
   text-align: center;
   background: #FFD8D8;
   color: #BD4C4C;
+  font-family: 'Bungee Shade', cursive;
 }
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
+  
   overflow: hidden;
   background-color: #E98787;
+  font-family: 'Vesper Libre', serif;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
 }
+
 
 /* Style the navigation bar links */
 .navbar a {
@@ -55,6 +61,7 @@ body {
 }
 /* Column container */
 .row {
+
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -73,6 +80,7 @@ body {
 .main {
 
   flex: 10%;
+  font-family: 'Vesper Libre', serif;
   background-color: #FFD4DC;
   padding: 20px;
 }
